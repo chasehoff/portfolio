@@ -9,12 +9,14 @@ import {
 import Home from './views/home/Home';
 import Contact from './views/contact/Contact';
 import Projects from './views/projects/Projects';
+import Hero from './components/hero/Hero';
 
 function App() {
   return (
     <Router>
       <div className="app">
         <Navigation />
+        <Hero />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />

@@ -1,0 +1,30 @@
+.hero__container {
+    position: relative;
+}
+.hero__background {
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    height: 300px;
+    background-image: url("../../images//rectangles.svg");
+}
+.hero__container h2 {
+    font-size: 7rem;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 2rem;
+}
+.hero__container h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.typed__styling {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.5em;
+    color: darkgrey;
+}
