@@ -1,0 +1,7 @@
+.nav__container {
+    display: flex;
+    background-color: #262526;
+}
+.nav__container h1 {
+    color: white;
+}
