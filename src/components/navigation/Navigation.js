@@ -6,12 +6,9 @@ import './index.css';
 function Navigation() {
     return (
         <div className="nav__container">
-            <h1>chasehoff.com</h1>
-            <div>
-                <NavLink exact to="/">Home</NavLink>
-                <NavLink to="/projects">Projects</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
-            </div>
+            <NavLink activeClassName="active" className="nav__link" exact to="/">Home</NavLink>
+            <NavLink activeClassName="active" className="nav__link" to="/projects">Projects</NavLink>
+            <NavLink activeClassName="active" className="nav__link" to="/contact">Contact</NavLink>
         </div>
     )
 }
