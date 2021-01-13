@@ -1,0 +1,22 @@
+{
+    "ideas": [
+      {
+        "name": "Project One",
+        "image": "https://ibb.co/DWvZYmN",
+        "description": "This is a test",
+        "path": "/projects/one"
+      },
+      {
+        "name": "Project Two",
+        "image": "",
+        "description": "",
+        "path": "/projects/two"
+      },
+      {
+        "name": "Project Three",
+        "image": "",
+        "description": "",
+        "path": "/projects/three"
+      }
+    ]
+  }
