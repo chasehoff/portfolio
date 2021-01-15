@@ -4,7 +4,7 @@ import './index.css'
 function Project(props) {
     return (
         <div className="project__container">
-            <img src="../../images/project_1.jpg" alt="Project" />
+            <img src={props.image} alt="Project" />
             <div className="project__title__container">
                 <h4>{props.name}</h4>
                 <p>{props.description}</p>
