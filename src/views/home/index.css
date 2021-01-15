@@ -32,3 +32,10 @@
     height: 500px;
     padding-right: 2em;
 }
+.home__container__section:nth-of-type(2) {
+
+}
+.home__skills__container {
+    display: flex;
+    flex-direction: row;
+}

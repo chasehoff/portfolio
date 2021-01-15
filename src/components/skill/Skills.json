@@ -1,0 +1,19 @@
+{
+    "skills": [
+      {
+        "number": ".01",
+        "header": "UI Design",
+        "text": "Experienced in UI design using Adobe XD, and utilizing modern day design concepts."
+      },
+      {
+        "number": ".02",
+        "header": "React Development",
+        "text": "Been using ReactJs for over 2+ years. Utilizing functional components props, and Redux."
+      },
+      {
+        "number": ".03",
+        "header": "API Development",
+        "text": "Knowledgable in API creation with Node, and Express."
+      }
+    ]
+  }
