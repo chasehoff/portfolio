@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import Skill from '../../components/skill/Skill';
 import Skills from '../../components/skill/Skills.json';
+import Footer from '../../components/footer/Footer';
 
 function Home() {
     return (
@@ -15,8 +16,8 @@ function Home() {
                 </div>
             </div>
             <div className="home__container__section">
-                <h2 className="skills__header">My Skills.</h2>
-                <div>
+                <h2 className="home__skills__header">My Skills.</h2>
+                <div className="home__skills__container">
                     {
                         Skills.skills.map((skill, i) =>(
                             <Skill key={i} number={skill.number} header={skill.header} text={skill.text} />
@@ -24,6 +25,7 @@ function Home() {
                     }
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

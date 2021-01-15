@@ -1,0 +1,16 @@
+.footer__container {
+    background-color: #262526;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space;
+    padding: 5px;
+}
+.footer__icons {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+.footer__icon {
+    margin: 1em !important;
+}
