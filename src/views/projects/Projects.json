@@ -14,21 +14,15 @@
       },
       {
         "name": "Foam Solutions",
-        "image": "https://ibb.co/DWvZYmN",
-        "description": "",
+        "image": "https://i.ibb.co/JsfkQJF/foam-solutions.jpg",
+        "description": "This was probably one of the most complex sites I have ever built. Not because of the development, but the design was extremely complex for me. With it being such a unique type of website.",
         "path": "/projects/foam-solutions"
       },
       {
         "name": "Northern Contracting",
-        "image": "https://ibb.co/DWvZYmN",
-        "description": "",
+        "image": "https://i.ibb.co/DYjf3LP/northern-contracting.jpg",
+        "description": "NCC is one of the first public client sites I have done. I built it using React, but had a deadline of 2 days. So I had to come up with the design, and develop the site in under 2 days.",
         "path": "/projects/northern-contracting"
-      },
-      {
-        "name": "Portfolio Site",
-        "image": "https://ibb.co/DWvZYmN",
-        "description": "",
-        "path": "/projects/portfolio"
       }
     ]
   }

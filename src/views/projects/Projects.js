@@ -7,7 +7,7 @@ import './index.css';
 function Projects() {
     return (
         <div>
-            <h2>Projects</h2>
+            <h2 className="projects__header">Projects</h2>
             <div className="projects__render">
                 {
                     ideas.ideas.map((project, i) =>(
