@@ -2,21 +2,33 @@
     "ideas": [
       {
         "name": "Desktop Kanban",
-        "image": "https://i.ibb.co/XLKqD69/merlin-163473282-fe17fc6b-78b6-4cdd-b301-6f63e6ebdd7a-super-Jumbo.jpg",
-        "description": "This is a program I developed in Electron with React. This allowed be to build a desktop application utilizing modern web technologies. It was compnaitable with both Windows, and Mac OS.",
-        "path": "/projects/one"
+        "image": "https://raw.githubusercontent.com/chashoff/Desktop-Kanban/master/app/TimeGuru_App-1.png",
+        "description": "This is a program I developed in Electron with React. This allowed me to build a desktop application utilizing modern web technologies. It was compatiable with both Windows, and Mac OS.",
+        "path": "/projects/kanban"
       },
       {
-        "name": "Project Two",
-        "image": "https://ibb.co/DWvZYmN",
-        "description": "",
-        "path": "/projects/two"
+        "name": "Time Guru",
+        "image": "https://i.ibb.co/CsY4FGT/timeguru-web.png",
+        "description": "Time-Guru is my personal project to enable remote users to have an easy way to keep track of tasks, and time management. This is done with the MERN stack.",
+        "path": "/projects/time-guru"
       },
       {
-        "name": "Project Three",
+        "name": "Foam Solutions",
         "image": "https://ibb.co/DWvZYmN",
         "description": "",
-        "path": "/projects/three"
+        "path": "/projects/foam-solutions"
+      },
+      {
+        "name": "Northern Contracting",
+        "image": "https://ibb.co/DWvZYmN",
+        "description": "",
+        "path": "/projects/northern-contracting"
+      },
+      {
+        "name": "Portfolio Site",
+        "image": "https://ibb.co/DWvZYmN",
+        "description": "",
+        "path": "/projects/portfolio"
       }
     ]
   }

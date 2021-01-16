@@ -1,5 +1,6 @@
 import React from 'react';
-import './index.css'
+import Divider from '@material-ui/core/Divider';
+import './index.css';
 
 function Project(props) {
     return (
@@ -7,6 +8,7 @@ function Project(props) {
             <img src={props.image} alt="Project" />
             <div className="project__title__container">
                 <h4>{props.name}</h4>
+                <Divider />
                 <p>{props.description}</p>
             </div>
         </div>

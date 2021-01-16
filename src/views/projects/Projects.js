@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from '../../components/project/Project';
 import ideas from './Projects.json';
+import Footer from '../../components/footer/Footer';
 import './index.css';
 
 function Projects() {
@@ -14,6 +15,7 @@ function Projects() {
                     ))
                 }
             </div>
+            <Footer />
         </div>
     )
 }
