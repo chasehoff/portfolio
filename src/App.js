@@ -24,10 +24,10 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
-          <Route exact path="/projects/kanban" component={Kanban} />
-          <Route exact path="/projects/time-guru" component={TimeGuru} />
-          <Route exact path="/projects/foam-solutions" component={FoamSolutions} />
-          <Route exact path="/projects/northern-contracting" component={NorthernContracting} />
+          <Route path="/projects/kanban" component={Kanban} />
+          <Route path="/projects/time-guru" component={TimeGuru} />
+          <Route path="/projects/foam-solutions" component={FoamSolutions} />
+          <Route path="/projects/northern-contracting" component={NorthernContracting} />
         </Switch>
       </div>
     </Router>
