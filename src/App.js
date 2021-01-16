@@ -21,6 +21,10 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
+          <Route path="/projects/kanban" component={Kanban} />
+          <Route path="/projects/time-guru" component={TimeGuru} />
+          <Route path="/projects/foam-solutions" component={FoamSolutions} />
+          <Route path="/projects/northern-contracting" component={NorthernContracting} />
         </Switch>
       </div>
     </Router>
