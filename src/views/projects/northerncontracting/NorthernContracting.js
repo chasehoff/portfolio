@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function NorthernContracting() {
     return (
@@ -8,4 +8,4 @@ function NorthernContracting() {
     )
 }
 
-export default NorthernContracting
+export default NorthernContracting;
