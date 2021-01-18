@@ -1,5 +1,6 @@
 .hero__container {
     position: relative;
+    overflow-x: hidden;
 }
 .hero__background {
     position: absolute;
@@ -29,4 +30,27 @@
     text-align: center;
     font-size: 1.5em;
     color: darkgrey;
+}
+@media screen and (max-width: 1382px) {
+    .hero__background {
+        top: -50px;
+    }
+    .hero__container h2 {
+        font-size: 6rem;
+    }
+}
+@media screen and (max-width: 860px) {
+    .hero__background {
+        top: -100px;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .hero__container h2 {
+        font-size: 4rem;
+    }
+    .typed__styling {
+        font-size: 1.2rem;
+    }
 }
