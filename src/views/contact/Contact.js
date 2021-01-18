@@ -19,7 +19,7 @@ function Contact() {
 
     return (
         <div className="contact__container">
-            <h1 className="contact__header">Contact</h1>
+            <h2 className="contact__header">Contact</h2>
             <form className="contact__form" onSubmit={handleSubmit}>
                 <div className="contact__input__section">
                     <input required className="contact__item__double" name="fname" placeholder="First Name*" value={formInfo.fname} onChange={(e) => setFormInfo({...formInfo, fname: e.target.value})} />
@@ -32,7 +32,7 @@ function Contact() {
                 <div className="contact__input__section">
                     <textarea rows="8" className="contact__item__single" name="message" placeholder="Message..." value={formInfo.message} onChange={(e) => setFormInfo({...formInfo, message: e.target.value})} />
                 </div>
-                <input className="contact__submit__button" type="submit" placeholder="Submit" />
+                <input className="contact__submit__button" type="submit" placeholder="Submit" label="submit" />
             </form>
             <Footer />
         </div>
