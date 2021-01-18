@@ -1,6 +1,5 @@
 .hero__container {
     position: relative;
-    overflow-x: hidden;
 }
 .hero__background {
     position: absolute;
