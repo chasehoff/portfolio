@@ -8,3 +8,8 @@
     text-align: center;
     margin-top: 5rem;
 }
+@media screen and (max-width: 530px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
