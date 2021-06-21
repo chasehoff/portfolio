@@ -1,20 +1,22 @@
 .skill__container {
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     background-color: whitesmoke;
-    max-width: 300px;
+    width: 300px;
     align-items: center;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
     transition: .2s ease-in-out all;
     -webkit-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px -1px rgba(0,0,0,0.75);
 }
 .skill__item__number {
     font-size: 7rem;
     color: lightgrey;
+    padding-bottom: 1rem;
 }
 .skill__header {
     font-weight: bold;
