@@ -1,5 +1,7 @@
 const express = require("express");
+const router = express.Router();
 const bodyParser = require("body-parser");
+const formSubmission = require('./routes/form');
 const cors = require('cors');
 const app = express();
 
@@ -13,9 +15,9 @@ app.use(
 );
 app.use(bodyParser.json());
 
-// Routes
-
-// app.use("/form-submission", formSubmission);
+app.use("/v1/form-submission", formSubmission);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));
+
+module.exports = router;

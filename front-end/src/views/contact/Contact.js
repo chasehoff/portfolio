@@ -1,20 +1,44 @@
 import React, { useState } from 'react';
 import Footer from '../../components/footer/Footer';
+import axios from 'axios';
 import './index.css';
 
 function Contact() {
-
-    const [ formInfo, setFormInfo ] = useState({
-        fname: '',
-        lname: '',
-        email: '',
-        company: '',
-        message: ''
-    });
+    const [ formInfo, setFormInfo ] = useState({});
+    const [ formBtn, setFormBtn ] = useState('Submit'); 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formInfo)
+        submitEmail();
+    }
+    
+    const submitEmail = () => {
+        setFormBtn('Sending...')
+        const headers = {
+            "Content-Type":"application/json",
+            "Access-Control-Allow-Origin": "*"
+            };
+        axios.post ("http://localhost:5000/v1/form-submission", JSON.stringify({formInfo}), {
+            headers
+        })
+        .then((response) => {
+            if(response.data.success === true) {
+                setFormInfo({
+                    fname: '',
+                    lname: '',
+                    email: '',
+                    company: '',
+                    message: ''
+                });
+                setFormBtn('Submitted!')
+            } else {
+                setFormBtn('Error')
+            }
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+        
     }
 
     return (
@@ -32,7 +56,7 @@ function Contact() {
                 <div className="contact__input__section">
                     <textarea rows="8" className="contact__item__single" name="message" placeholder="Message..." value={formInfo.message} onChange={(e) => setFormInfo({...formInfo, message: e.target.value})} />
                 </div>
-                <input className="contact__submit__button" type="submit" placeholder="Submit" label="submit" />
+                <button className="contact__submit__button" type="submit">{formBtn}</button>
             </form>
             <Footer />
         </div>
