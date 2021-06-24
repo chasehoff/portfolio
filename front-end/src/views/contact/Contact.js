@@ -56,7 +56,7 @@ function Contact() {
                     captcha: ''
                 });
                 setFormBtn('Submitted!')
-            } else {
+            } else if(response.data.success === false) {
                 setFormBtn('Error')
             }
         })
