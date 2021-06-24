@@ -18,7 +18,7 @@ function Contact() {
             "Content-Type":"application/json",
             "Access-Control-Allow-Origin": "*"
             };
-        axios.post ("http://localhost:5000/v1/form-submission", JSON.stringify({formInfo}), {
+        axios.post ("https://localhost:5000/v1/form-submission", JSON.stringify({formInfo}), {
             headers
         })
         .then((response) => {
