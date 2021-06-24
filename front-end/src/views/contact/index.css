@@ -30,6 +30,7 @@
     border-right: none;
     border-left: 2px solid black;
     border-bottom: 2px solid black;
+    font-size: inherit;
 }
 .contact__item__single {
     border-top: none;
@@ -37,6 +38,8 @@
     border-left: 2px solid black;
     border-bottom: 2px solid black;
     width: 100%;
+    font-family: inherit;
+    font-size: inherit;
 }
 .contact__submit__button {
     background-color: transparent;
@@ -50,6 +53,19 @@
 }
 .contact__input__section .contact__item__double:nth-of-type(2) {
     margin-left: .5rem;
+}
+.captcha__container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 .5rem 0;
+    align-items: center;
+}
+.captcha__input {
+    margin-left: .25rem;
+    border: 2px solid black;
+    padding: .25rem;
+    width: 20px;
+    font-size: inherit;
 }
 
 @media screen and (max-width: 690px) {

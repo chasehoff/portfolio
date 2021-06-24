@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from "framer-motion";
 import Footer from '../../components/footer/Footer';
 import axios from 'axios';
 import './index.css';
@@ -11,6 +12,29 @@ function Contact() {
         e.preventDefault();
         submitEmail();
     }
+
+    const pageVariants = {
+        initial: {
+          opacity: 0,
+          y: "-10vh",
+          scale: 0.8,
+        },
+        in: {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+        },
+        out: {
+          opacity: 0,
+          y: "100vh",
+          scale: 1.2,
+        },
+    };
+    const pageTransition = {
+        type: "tween",
+        ease: "anticipate",
+        duration: 0.8,
+    };
     
     const submitEmail = () => {
         setFormBtn('Sending...')
@@ -28,7 +52,8 @@ function Contact() {
                     lname: '',
                     email: '',
                     company: '',
-                    message: ''
+                    message: '',
+                    captcha: ''
                 });
                 setFormBtn('Submitted!')
             } else {
@@ -38,11 +63,14 @@ function Contact() {
         .catch((error) => {
             console.log(error)
         })
-        
     }
 
     return (
-        <div className="contact__container">
+        <motion.div initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageVariants}
+        transition={pageTransition}  className="contact__container">
             <h2 className="contact__header">Contact</h2>
             <form className="contact__form" onSubmit={handleSubmit}>
                 <div className="contact__input__section">
@@ -56,10 +84,14 @@ function Contact() {
                 <div className="contact__input__section">
                     <textarea rows="8" className="contact__item__single" name="message" placeholder="Message..." value={formInfo.message} onChange={(e) => setFormInfo({...formInfo, message: e.target.value})} />
                 </div>
+                <div className="captcha__container">
+                    <p>6 + 5 = </p>
+                    <input className="captcha__input" placeholder="" value={formInfo.captcha} onChange={(e) => setFormInfo({...formInfo, captcha: e.target.value})} />
+                </div>
                 <button className="contact__submit__button" type="submit">{formBtn}</button>
             </form>
             <Footer />
-        </div>
+        </motion.div>
     )
 }
 

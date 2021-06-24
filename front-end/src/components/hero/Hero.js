@@ -14,8 +14,8 @@ function Hero() {
                     'Primarily developing in React',
                     'Primarily developing in Node'
                 ]}
-                    typeSpeed={60}
-                    backSpeed={60}
+                    typeSpeed={80}
+                    backSpeed={80}
                     loop >
                     <input className="typed__styling" type="text"/>
                 </Typed>
