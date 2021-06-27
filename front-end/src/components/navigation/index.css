@@ -26,3 +26,18 @@
     border-bottom: 3px solid #1ff0c3;
     color: #1ff0c3;
 }
+@media screen and (max-width: 550px) {
+    .nav__link {
+        display: none;
+    }
+    .nav__hamburger__menu {
+        display: block;
+        font-size: 2.5rem;
+        color: lightgrey;
+    }
+}
+@media screen and (min-width: 550px) {
+    .nav__hamburger__menu {
+        display: none;
+    }
+}

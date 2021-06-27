@@ -12,7 +12,7 @@ function Contact() {
         e.preventDefault();
         submitEmail();
     }
-
+    // Page fade in
     const pageVariants = {
         initial: {
           opacity: 0,
@@ -94,5 +94,4 @@ function Contact() {
         </motion.div>
     )
 }
-
 export default Contact;
