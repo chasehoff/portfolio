@@ -42,7 +42,7 @@ function Contact() {
             "Content-Type":"application/json",
             "Access-Control-Allow-Origin": "*"
             };
-        axios.post ("https://chashoff.com/api/v1/form-submission", JSON.stringify({formInfo}), {
+        axios.post ("/api/v1/form-submission", JSON.stringify({formInfo}), {
             headers
         })
         .then((response) => {
