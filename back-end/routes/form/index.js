@@ -3,6 +3,7 @@ const router = express.Router();
 const nodeOutlook = require('nodejs-nodemailer-outlook')
 
 router.post("/", (req, res) => {
+    console.log(req.body.formInfo)
         nodeOutlook.sendEmail({
             auth: {
                 user: "management@digitalbyte.io",
