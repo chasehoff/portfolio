@@ -3,7 +3,6 @@ const router = express.Router();
 const nodeOutlook = require('nodejs-nodemailer-outlook')
 
 router.post("/", (req, res) => {
-    if(req.body.formInfo.captcha == 11) {
         nodeOutlook.sendEmail({
             auth: {
                 user: "management@digitalbyte.io",
@@ -25,18 +24,14 @@ router.post("/", (req, res) => {
             text: '',
             replyTo: 'management@digitalbyte.io',
             attachments: [
-                                {
-                                    filename: 'text1.txt',
-                                    content: 'hello world!'
-                                }
+                                // {
+                                //     filename: 'text1.txt',
+                                //     content: 'hello world!'
+                                // }
                             ],
             onError: (e) => console.log(e),
             onSuccess: (i) => res.send({ success: true })
         });
-    } else {
-        res.send({ success: false })
-    }
-    
 });
 
 module.exports = router;

@@ -52,8 +52,7 @@ function Contact() {
                     lname: '',
                     email: '',
                     company: '',
-                    message: '',
-                    captcha: ''
+                    message: ''
                 });
                 setFormBtn('Submitted!')
             } else if(response.data.success === false) {
