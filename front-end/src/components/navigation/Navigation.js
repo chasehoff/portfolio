@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import MainLogo from '../../images/main_logo.png';
 import { HiMenu } from 'react-icons/hi';
-import Drawer from '@material-ui/core/Drawer';
 import './index.css';
 
 
