@@ -5,7 +5,7 @@ import { HiMenu } from 'react-icons/hi';
 import './index.css';
 
 
-function Navigation() {
+function Navigation({ isOpen, setOpen }) {
     return (
         <div className="nav__container">
             <div className="nav__container__item__logo">
@@ -15,7 +15,7 @@ function Navigation() {
                 <NavLink activeClassName="active" className="nav__link" exact to="/">Home</NavLink>
                 <NavLink activeClassName="active" className="nav__link" to="/projects">Projects</NavLink>
                 <NavLink activeClassName="active" className="nav__link" to="/contact">Contact</NavLink>
-                <HiMenu className="nav__hamburger__menu" />
+                <HiMenu onClick={setOpen} className="nav__hamburger__menu" />
             </div>
         </div>
     )

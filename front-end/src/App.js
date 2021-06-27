@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState } from 'react';
 import Navigation from './components/navigation/Navigation';
 import {
   BrowserRouter as Router,
@@ -13,12 +14,17 @@ import Kanban from './views/projects/kanban/Kanban';
 import TimeGuru from './views/projects/timeguru/TimeGuru';
 import FoamSolutions from './views/projects/foamsolutions/FoamSolutions';
 import NorthernContracting from './views/projects/northerncontracting/NorthernContracting';
+import Drawer from '@material-ui/core/Drawer';
 
 function App() {
+  const [ isOpen, setOpen ] = useState(false);
   return (
     <Router>
       <div className="app">
-        <Navigation />
+        <Navigation setOpen={setOpen} isOpen={isOpen} />
+        <Drawer anchor="right" open={isOpen} onClose={() => setOpen(!isOpen)}>
+            <p>Test</p>
+          </Drawer>
         <Hero />
         <Switch>
           <Route exact path="/" component={Home} />
