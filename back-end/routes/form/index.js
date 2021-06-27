@@ -34,7 +34,7 @@ router.post("/", (req, res) => {
             onSuccess: (i) => res.send({ success: true })
         });
     } else {
-        res.send({ success: false }).statusCode(504);
+        res.send({ success: false })
     }
     
 });
