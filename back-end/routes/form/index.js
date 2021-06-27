@@ -3,7 +3,7 @@ const router = express.Router();
 const nodeOutlook = require('nodejs-nodemailer-outlook')
 
 router.post("/", (req, res) => {
-    console.log(req.body.formInfo)
+    if(req.body.formInfo.captcha == 11) {
         nodeOutlook.sendEmail({
             auth: {
                 user: "management@digitalbyte.io",
@@ -33,6 +33,10 @@ router.post("/", (req, res) => {
             onError: (e) => console.log(e),
             onSuccess: (i) => res.send({ success: true })
         });
+    } else {
+        res.send({ success: false }).statusCode(504);
+    }
+    
 });
 
 module.exports = router;
