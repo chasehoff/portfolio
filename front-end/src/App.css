@@ -11,3 +11,41 @@ h2 {
     font-weight: 100;
     margin-bottom: 2rem;
 }   
+.mobile__nav__container {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+.mobile__nav__logo {
+    height: 20px;
+    padding: 1rem;
+}
+#mobile__section__one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 200px;
+    justify-content: space-between;
+}
+.mobile__nav__close {
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: darkgrey;
+    transition: .2s ease-in-out all;
+}
+.mobile__nav__close:hover {
+    color: #fa6c61;
+}
+.mobile__nav__link {
+    display: flex;
+    padding: 1.5rem 0 0 1rem;
+    text-decoration: none;
+}
+.mobile__nav__link__icon {
+    font-size: 1.8rem;
+    color: darkgrey;
+}
+.mobile__nav__link__text {
+    padding-left: .75rem;
+    color: darkgrey;
+}
