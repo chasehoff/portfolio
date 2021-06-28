@@ -13,6 +13,7 @@ app.use(
     extended: false
   })
 );
+
 app.use(bodyParser.json());
 
 app.use("/v1/form-submission", formSubmission);

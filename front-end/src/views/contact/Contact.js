@@ -43,7 +43,7 @@ function Contact() {
             "Content-Type":"application/json",
             "Access-Control-Allow-Origin": "*"
             };
-        axios.post ("http://localhost:5000/v1/form-submission", {formInfo}, {
+        axios.post ("/api/v1/form-submission", {formInfo}, {
             headers
         })
         .then((response) => {
