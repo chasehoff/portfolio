@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Navigation from './components/navigation/Navigation';
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route
 } from "react-router-dom";
 import Home from './views/home/Home';
@@ -49,15 +49,15 @@ function App() {
           </div>
         </Drawer>
         <Hero />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/projects/kanban" component={Kanban} />
-          <Route path="/projects/time-guru" component={TimeGuru} />
-          <Route path="/projects/foam-solutions" component={FoamSolutions} />
-          <Route path="/projects/northern-contracting" component={NorthernContracting} />
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects/kanban" element={<Kanban />} />
+          <Route path="/projects/time-guru" element={<TimeGuru />} />
+          <Route path="/projects/foam-solutions" element={<FoamSolutions />} />
+          <Route path="/projects/northern-contracting" element={<NorthernContracting />} />
+        </Routes>
       </div>
     </Router>
   );
