@@ -6,6 +6,9 @@ function Hero() {
     return (
         <div className="hero__container">
             <div className="hero__background" />
+            <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '2rem' }}>
+                <img style={{ height: '300px', width: '300px', borderRadius: '50%'}} src="./images/profile.png" />
+            </div>
             <h2>CHASE HOFFMAN</h2>
             <Typed
                 strings={[
