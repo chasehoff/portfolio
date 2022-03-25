@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 app.use("/v1/form-submission", formSubmission);
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5021;
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));
 
 module.exports = router;
