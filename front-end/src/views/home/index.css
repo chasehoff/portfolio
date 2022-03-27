@@ -6,7 +6,6 @@
 }
 .home__container__section {
     display: flex; 
-    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -40,12 +39,20 @@
 }
 .home__skills__header {
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 .home__skills__container {
     display: flex;
     flex-direction: row;
     width: 65%;
     justify-content: space-between;
+}
+.home__school__divider {
+    height: 1px;
+    width: 100px;
+    margin: 0 1rem;
+    background-color: lightgrey;
 }
 
 @media screen and (max-width: 900px) {
